@@ -116,6 +116,7 @@ p {
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
+    transition: transform 0.5s;
 }
 .col-4 img{
     width: 100%;
@@ -126,11 +127,28 @@ p {
     position: relative;
     color: #555;
 }
-.title::after{
-    color: '';
+.title::after {
+    content: '';
+    color: transparent;
     background: #ff523b;
     width: 80px;
     height: 5px;
     border-radius: 5px;
     position: absolute;
+    bottom: -0.3cm; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p {
+    font-size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+.col-4:hover{
+    transform: translateY(5px);
 }
